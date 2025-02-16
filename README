@@ -1,0 +1,61 @@
+### **📌 What This README Covers**
+
+✅ **ETL process overview**  
+✅ **Step-by-step explanation** (Ingestion, Cleaning, Transformation, Loading)  
+✅ **How to run the ETL script**  
+✅ **SQL schema details**  
+✅ **Optimization techniques**  
+
+
+# ETL Process for User Interaction Data
+
+## 📌 Overview
+This project processes messy user interaction data in CSV format and loads the cleaned, transformed data into an SQLite database for analysis.
+
+## 📂 ETL Steps
+
+### **1️⃣ Data Ingestion**
+- Reads raw interaction data from a CSV file (`messy_interaction_data.csv`).
+- Columns in the dataset:
+  - `interaction_id` (Unique ID for the interaction)
+  - `user_id` (User identifier; may be missing)
+  - `product_id` (Product identifier; may be missing)
+  - `action` (Type of interaction: `view`, `click`, `purchase`)
+  - `timestamp` (Date and time of interaction)
+
+### **2️⃣ Data Cleaning**
+- **Handling Missing Values:**
+  - If `user_id` is missing → Replaced with `-1.0` (indicating anonymous user).
+  - If `product_id` is missing → Replaced with `-1.0` (indicating unknown product).
+- **Ensuring Correct Data Types:**
+  - `timestamp` converted to `datetime` format.
+  - `interaction_id`, `user_id`, `product_id` converted to integers where possible.
+- **Removing Duplicate Entries** (if any).
+
+### **3️⃣ Data Transformation**
+- **Calculating User and Product Interaction Counts:**
+  - Count total interactions per `user_id`.
+  - Count total interactions per `product_id`.
+  - **Adding an `interaction_count` Column:**
+  - `interaction_count = user_interaction_count + product_interaction_count`
+
+### **4️⃣ Data Loading**
+- Loads the cleaned and transformed data into an **SQLite database** (`interactions.db`).
+- Creates a table `user_interactions` with the following schema:
+
+  ```sql
+  CREATE TABLE user_interactions (
+      interaction_id INTEGER PRIMARY KEY,
+      user_id INTEGER,
+      product_id INTEGER,
+      action TEXT,
+      timestamp TEXT,
+      user_interaction_count INTEGER,
+      product_interaction_count INTEGER,
+      interaction_count INTEGER
+  );
+
+🛠️ Optimization Techniques
+ - Used indexing for faster retrieval.
+ - Removed duplicate rows to avoid redundant data.
+ - Converted timestamps to datetime for better querying.
