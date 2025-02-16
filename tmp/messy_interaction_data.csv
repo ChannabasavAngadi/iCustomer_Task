@@ -1,0 +1,101 @@
+interaction_id,user_id,product_id,action,timestamp
+1,98,6,view,invalid_date
+2,23,19,,2024-02-19 11:43:24
+3,65,4,,2024-06-10 11:43:24
+4,30,unknown,view,2024-12-08 11:43:24
+5,,10,,2024-08-11 11:43:24
+6,,4,click,2025-01-11 11:43:24
+7,27,17,view,
+8,,8,,
+9,,unknown,click,
+10,68,unknown,view,invalid_date
+11,,20,view,2024-12-14 11:43:24
+12,,15,purchase,invalid_date
+13,,unknown,purchase,
+14,35,unknown,,
+15,97,unknown,,
+16,100,8,click,invalid_date
+17,,10,purchase,
+18,86,1,click,2024-04-19 11:43:24
+19,66,10,view,2024-03-13 11:43:24
+20,,12,,invalid_date
+21,1,11,purchase,
+22,,unknown,view,invalid_date
+23,,unknown,view,
+24,16,unknown,view,2024-03-04 11:43:24
+25,,unknown,click,invalid_date
+26,24,unknown,purchase,2024-05-07 11:43:24
+27,,unknown,,2024-12-21 11:43:24
+28,,unknown,purchase,
+29,62,unknown,,invalid_date
+30,,unknown,purchase,
+31,,17,view,
+32,,unknown,purchase,
+33,73,unknown,click,
+34,22,4,purchase,
+35,86,unknown,purchase,
+36,31,6,,2025-01-03 11:43:24
+37,30,unknown,click,2024-02-28 11:43:24
+38,,unknown,,
+39,90,11,,invalid_date
+40,7,unknown,view,invalid_date
+41,40,8,view,2024-06-16 11:43:24
+42,,18,view,
+43,,unknown,,2025-02-14 11:43:24
+44,98,20,purchase,
+45,,unknown,purchase,2024-09-30 11:43:24
+46,,unknown,click,invalid_date
+47,,unknown,view,
+48,,3,view,
+49,,4,view,invalid_date
+50,,4,purchase,2024-02-22 11:43:24
+51,79,unknown,view,invalid_date
+52,,unknown,purchase,invalid_date
+53,61,16,,invalid_date
+54,53,12,,2024-04-20 11:43:24
+55,,unknown,click,invalid_date
+56,,12,click,invalid_date
+57,,unknown,view,invalid_date
+58,,unknown,purchase,invalid_date
+59,,unknown,purchase,2024-08-11 11:43:24
+60,50,unknown,view,invalid_date
+61,,18,,invalid_date
+62,98,8,view,
+63,75,3,,
+64,,9,view,
+65,,unknown,,
+66,46,15,view,
+67,,2,,2024-06-04 11:43:24
+68,,4,,
+69,2,7,,2024-03-22 11:43:24
+70,,unknown,purchase,invalid_date
+71,17,unknown,click,
+72,,19,view,invalid_date
+73,,unknown,click,invalid_date
+74,,unknown,purchase,invalid_date
+75,62,7,click,invalid_date
+76,45,8,view,
+77,,unknown,,invalid_date
+78,84,1,view,invalid_date
+79,72,unknown,purchase,invalid_date
+80,,1,click,2024-03-09 11:43:24
+81,49,7,,
+82,,unknown,click,
+83,,unknown,view,2024-11-02 11:43:24
+84,,5,view,invalid_date
+85,,unknown,purchase,invalid_date
+86,,unknown,view,2024-10-20 11:43:24
+87,74,10,view,
+88,28,20,view,invalid_date
+89,,5,purchase,invalid_date
+90,6,unknown,,invalid_date
+91,58,unknown,click,invalid_date
+92,73,14,,
+93,,16,purchase,invalid_date
+94,,unknown,view,invalid_date
+95,,unknown,click,invalid_date
+96,45,unknown,purchase,2024-08-25 11:43:24
+97,,unknown,purchase,2024-10-22 11:43:24
+98,,unknown,click,
+99,,6,view,2024-06-02 11:43:24
+100,77,15,,
